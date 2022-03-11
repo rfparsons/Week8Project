@@ -5,11 +5,18 @@
  */
 package dmacc.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * @author Bobby
  *
  */
+@Entity
 public class Computer {
+	@Id
+	@GeneratedValue
 	int id;
 	String hostname;
 	String cpu;
